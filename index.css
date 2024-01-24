@@ -17,7 +17,7 @@ body {
     height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
     justify-content: center;    /* centra els elements en la direcció de disposició */
     align-items: center;    /* centra els elements en la direcció perpendicular a la de disposició */
-    font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
+    font-size: 12;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: #ede8e9;    /* color del text */
     background-color: #950E17;    /* color de fons */
 }
@@ -29,7 +29,7 @@ body {
     display: flex;    /* única secció que es mostra a l'inici */
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
-    font-size: 4vmax;
+    font-size: 12;
 }
 #menu {
     display: flex;    /* el menú és un contenidor de tipus flex */
@@ -42,7 +42,7 @@ body {
     align-items: center;
     color: white;
     background-color: #950E17;
-    font-size: 5vmax;
+    font-size: 12;
     cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
 }
 #seccio_0 {
@@ -50,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 4vmax;
+    font-size: 12;
 }
 #credencials {
     display: flex;
@@ -71,7 +71,7 @@ body {
     align-items: center;
 }
 #botons_sessio button {    /* els 2 botons dins de botons_sessio */
-    font-size: 3vmax;
+    font-size: 12;
     padding: 2vmin;
     margin: 1vmin;
 }
