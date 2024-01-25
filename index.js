@@ -1,7 +1,7 @@
 let validat = false;
 let usuari, contrasenya, seccio_origen, mapa, geoID;
 let storage = window.localStorage;
-let scriptURL = "https://script.google.com/macros/s/AKfycbwO6FnBnaBmxrzPRyLDhV8D6pW7Pe6V8-SYIdSHZXMmg8JqjJwQz8H8zA8wl3U6u2pW/exec";
+let scriptURL = "https://script.google.com/macros/s/AKfycbz9vpU09wnTo7O8c6q6ZpWtN-bvdTX1wv9M1E4xK566qaL3dfRxcEPcbeh__wt7IvoL9g/exec";
 
 window.onload = () => { 
     let base_de_dades = storage.getItem("base_de_dades");   
