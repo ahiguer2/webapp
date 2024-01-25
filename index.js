@@ -80,7 +80,7 @@ function nou_usuari() {
 function inici_sessio() {
     usuari = document.getElementById("nom_usuari").value;
     contrasenya = document.getElementById("contrasenya").value;
-    let consulta = scriptURL + "?query=select&from=usuaris&where=usuari&is=" + usuari + "&and=contrasenya&equal=" + contrasenya;
+    let consulta = scriptURL + "?query=select&from=usuari&where=usuari&is=" + usuari + "&and=contrasenya&equal=" + contrasenya;
     fetch(consulta)
         .then(resposta => resposta.json())
         .then(resposta => {
