@@ -16,7 +16,8 @@
         Viajerodáctilo
     </div>
     <div id="seccio_0" class="seccio">
-        <div>
+        <div id=""inici_sessio">
+        </div>
           Inici de sessió    <!-- títol de la secció -->
         </div> 
         <div id="credencials">    <!-- contenidor per als quadres de text -->
@@ -37,12 +38,28 @@
     <div id="seccio_1" class="seccio">   <!-- espai central per mostrar contingut -->
         Secció 1
     </div>
-    <div id="seccio_2" class="seccio">  <!-- espai central per mostrar contingut -->
-        Secció 2
-    </div>
-    <div id="seccio_3" class="seccio">   <!-- espai central per mostrar contingut -->
-        Secció 3
-    </div>
+    <div id="seccio_2" class="seccio">
+        <div id="div_foto">    <!-- contenidor de la vista prèvia de la foto feta -->
+          <img id="foto">
+          <i id="icona_camera" class="fa-solid fa-image"></i>    <!-- icona que ocupa l'espai quan encara no s'ha fet la foto -->
+        </div>
+        <div id="div_control">    <!-- contenidor dels botons per fer i desar la foto -->
+            <label for="obturador">    <!-- etiqueta auxiliar per ocultar el botó predeterminat -->
+              <i class="fa-solid fa-circle-dot"></i>    <!-- icona del botó per fer la foto -->
+            </label>
+            <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- element que captura la imatge -->
+            <i id="desa" class="fa-solid fa-check"></i>
+            </div>
+        </div>
+        <div id="seccio_3" class="seccio">
+            <div id="llista_titol">    <!-- capçalera de la llista de fotos -->
+              <i class="fa-solid fa-image"></i>    <!-- per a la miniatura de les fotos -->
+              <i class="fa-solid fa-calendar-days"></i>    <!-- per a la data de captura de les fotos -->
+              <i class="fa-solid fa-trash"></i>    <!-- per esborrar les fotos -->    
+            </div>
+            <div id="llista_fotos">    <!-- contenidor, inicialment buit, on hi haurà una fila per a cada foto -->
+            </div>
+          </div>
     <div id="seccio_4" class="seccio">   <!-- espai central per mostrar contingut -->
         Secció 4
     </div>
@@ -55,20 +72,7 @@
         <i id="boto_4" class="fa-solid fa-map"></i>    <!-- mapa -->
         <i class="fa-solid fa-right-from-bracket"></i>    <!-- tancar sessió -->
       </div>
-      <div id="seccio_2" class="seccio">
-        <div id="div_foto">    <!-- contenidor de la vista prèvia de la foto feta -->
-          <img id="foto">
-          <i id="icona_camera" class="fa-solid fa-image"></i>    <!-- icona que ocupa l'espai quan encara no s'ha fet la foto -->
-        </div>
-        <div id="div_control">    <!-- contenidor dels botons per fer i desar la foto -->
-            <label for="obturador">    <!-- etiqueta auxiliar per ocultar el botó predeterminat -->
-              <i class="fa-solid fa-circle-dot"></i>    <!-- icona del botó per fer la foto -->
-            </label>
-            <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- element que captura la imatge -->
-            <i id="desa" class="fa-solid fa-check"></i>    <!-- icona del botó per desar la foto -->
-        </div>
-      </div>
-      <canvas id="canvas"></canvas>
+       <canvas id="canvas"></canvas>
 <div id="div_gran">
   <img id="foto_gran" />
 </div>
