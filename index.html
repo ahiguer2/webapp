@@ -1,60 +1,30 @@
-<!DOCTYPE html>
-<html>
-    <html lang="ca">
-        <head>
-          <script src="index.js"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
-            <link rel="stylesheet" href="index.css">
-            <meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
-            <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
-            <meta name="description" content="Descripció de la nostra webapp.">    <!-- breu descripció per als cercadors -->
-            <title>    <!-- títol que es visualitza en la part superior del navegador -->
-                Nom de la webapp
-            </title>
-            <div id="superior">    <!-- franja superior per mostar el nom de la webapp -->
-              ProvApp
-          </div>
-          </head>
-          <body>
-
-            <div id="seccio_0" class="seccio">
-                <div>
-                  Inici de sessió    <!-- títol de la secció -->
-                </div> 
-                <div id="credencials">    <!-- contenidor per als quadres de text -->
-                  <div>
-                    <label for="nom_usuari">Nom d'usuari</label>
-                    <input type="text" id="nom_usuari">
-                  </div>
-                  <div>
-                    <label for="contrasenya">Contrasenya</label>        
-                    <input type="password" id="contrasenya">
-                  </div>
-                </div>
-                <div id="botons_sessio">
-                  <button onclick="inici_sessio()">Inicia sessió</button>
-                  <button onclick="nou_usuari()">Nou usuari</button>
-                </div>      
-              </div>
-            <div id="seccio_1">    <!-- espai central per mostrar contingut -->
-                Secció 1
-            </div>
-            <div id="seccio_2">    <!-- espai central per mostrar contingut -->
-              Secció 2
-          </div>
-          <div id="seccio_3">    <!-- espai central per mostrar contingut -->
-            Secció 3
-        </div>
-        <div id="seccio_4">    <!-- espai central per mostrar contingut -->
-          Secció 4
-      </div>
-              <div id="menu">      
-                <i id="boto_1" class="fa-solid fa-house" onclick="canvia_seccio(1)"></i>     
-                <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>
-                <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>
-                <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>
-                <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>
-              </div>
-          </body>
+<!DOCTYPE html>    <!-- tipus de document (HTML) -->  
+<html lang="ca"></html>
+<head>
+    <meta charset="UTF-8">    <!-- codificació del text (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- adapta la visualització a les mides de la pantalla -->
+    <meta name="description" content="Descripció de la nostra webapp.">    <!-- breu descripció per als cercadors -->
+    <title>    <!-- títol que es visualitza en la part superior del navegador -->
+        Nom de la webapp
+    </title>
+  </head>
+  <body> <!--cos-->
+    <div id="superior">    <!-- franja superior per mostar el nom de la webapp -->
+        Nom de la webapp
+    </div>
+    <div id="seccio_1" class="seccio"></div>   <!-- espai central per mostrar contingut -->
+        Secció 1
+    </div>
+    <div id="seccio_2" class="seccio"></div>   <!-- espai central per mostrar contingut -->
+    Secció 2
+</div>
+<div id="seccio_3" class="seccio"></div>   <!-- espai central per mostrar contingut -->
+Secció 3
+</div>
+<div id="seccio_4" class="seccio"></div>   <!-- espai central per mostrar contingut -->
+Secció 4
+</div>
+    <div id="menu">    <!-- franja inferior per al menú de navegació -->
+    </div>
+  </body>
 </html>
